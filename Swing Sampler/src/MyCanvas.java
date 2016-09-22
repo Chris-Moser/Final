@@ -1,5 +1,4 @@
 import java.awt.*;
-
 import javax.swing.*;
  
 public class MyCanvas extends Canvas 
@@ -46,8 +45,9 @@ public class MyCanvas extends Canvas
     			{
     	        try
     					{
-    					Thread.sleep(50);
-    					} catch (InterruptedException e)
+    					Thread.sleep(500);
+    					} 
+    	        catch (InterruptedException e)
     					{
     					e.printStackTrace();
     					}
