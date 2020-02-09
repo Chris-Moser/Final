@@ -27,7 +27,7 @@ public class MyCanvas extends Canvas
 	        graphics.fillRect(10, 10, 200, 100);
 	        
 	        graphics.setColor(Color.black);
-	        graphics.drawLine(40, 30, 330, 380);
+	        graphics.drawLine(40, 30, 330, 180);
 	        
 	        for (int i = 0; i < 350; i++)
 	        	{
@@ -36,7 +36,7 @@ public class MyCanvas extends Canvas
 		        
 		        delay();
 		        
-		        graphics.setColor(Color.white);
+		        graphics.setColor(Color.gray);
 		        graphics.fillRect(300, i, 50, 50);
 	        	}
     		}
@@ -45,7 +45,7 @@ public class MyCanvas extends Canvas
     			{
     	        try
     					{
-    					Thread.sleep(500);
+    					Thread.sleep(50);
     					} 
     	        catch (InterruptedException e)
     					{
