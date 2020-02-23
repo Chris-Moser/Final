@@ -1,15 +1,27 @@
 import java.awt.*;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.*;
+import java.util.Scanner;
+
+import javax.swing.*;
  
-public class MyCanvas extends Canvas 
+public class MyCanvas extends Canvas implements ActionListener, Keylistener
 	{
+	
+	public static String direction;
+	public static int X = 0;
+	public static int Y = 0;
+	
 	private static final long	serialVersionUID	= 1L;
  
     	public static void main(String[] args) 
     		{
-	        MyCanvas canvas = new MyCanvas();
+    		
+    		MyCanvas canvas = new MyCanvas();
 	        JFrame frame = new JFrame();
-	        frame.setSize(500, 400);
+	        frame.setSize(500, 500);
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	        frame.getContentPane().add(canvas).setBackground(Color.white);
 	        frame.setLocationRelativeTo(null); //Sets JPanel to center of screen 
@@ -17,29 +29,28 @@ public class MyCanvas extends Canvas
 	        frame.setVisible(true);
     		}
  
-    	public void paint(Graphics graphics) 
+    
+
+
+
+		public void paint(Graphics graphics) 
     		{
     		
-	        graphics.setColor(Color.red);
-	        graphics.fillOval(140, 130, 100, 100);
+	       
+	    	   
+	       
 	        
-	        graphics.setColor(Color.blue);
-	        graphics.fillRect(10, 10, 200, 100);
 	        
-	        graphics.setColor(Color.black);
-	        graphics.drawLine(40, 30, 330, 180);
 	        
-	        for (int i = 0; i < 350; i++)
-	        	{
-		        graphics.setColor(Color.green);
-		        graphics.fillRect(300, i, 50, 50);
-		        
-		        delay();
-		        
-		        graphics.setColor(Color.gray);
-		        graphics.fillRect(300, i, 50, 50);
-	        	}
-    		}
+	       
+	       }
+    		
+	        
+	        
+	        
+	        
+
+    		
     	
     		public void delay()
     			{
