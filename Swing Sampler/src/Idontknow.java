@@ -6,8 +6,6 @@ public class Idontknow   {
 		JFrame f = new JFrame();
 		Test2 s = new Test2(f);
 		f.add(s);
-		
-		
 		f.setVisible(true);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setSize(800,800);
