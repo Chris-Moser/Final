@@ -101,8 +101,8 @@ public class Test2 extends JPanel implements ActionListener, KeyListener{
 		for (int i = 0; i < 20; i++)
 		{
 			if (isGen == false) {
-				xposit = (int) (Math.random() * 800) + 0;
-				yposit = (int) (Math.random() * 800) + 0;
+				xposit = (int) (Math.random() * 800) + 20;
+				yposit = (int) (Math.random() * 800) + 20;
 				radius = 20;
 				badShapes.add(new Shape ("shape", radius,xposit,yposit));
 			}

@@ -23,13 +23,6 @@ public class Shape {
 	}
 
 
-
-
-
-
-
-
-
 	public int getCordinatex() {
 		return cordinatex;
 	}
@@ -68,12 +61,6 @@ public class Shape {
 	public void setShapeID(String shapeID) {
 		this.shapeID = shapeID;
 	}
-
-
-
-
-	
-
 
 
 
